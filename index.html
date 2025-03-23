@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hosting</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #f3f4f6;
+            color: #333;
+            font-size: 16px;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(45deg, #4e73df, #1cc88a);
+            background-clip: text;
+            color: transparent;
+        }
+        
+        header h4 {
+          font-size: 3rem;
+          font-weight: 700;
+          background: #000
+          background-clip: text;
+          color: linear-gradient(45deg, #4e73df, #1cc88a);
+        }
+        
+        header h2 {
+          font-size: 3rem;
+          font-weight: 700;
+          background: #4e73df;
+          background-clip: text;
+          color: transparent;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        /* Hosting Plans */
+        .pricing-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .pricing-card {
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 30%;
+            transition: transform 0.3s ease;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .pricing-card-header {
+            background: linear-gradient(45deg, #4e73df, #1cc88a);
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .pricing-card2-header {
+          background: linear-gradient(45deg, #4e73df, #CC10FF);
+          color: #fff;
+          text-align: center;
+          padding: 20px;
+        }
+
+        .pricing-card-header h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .pricing-card-header p {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+        }
+
+        .pricing-card-body {
+            padding: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .feature {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .feature span {
+            color: #555;
+            font-size: 1rem;
+        }
+
+        .feature .value {
+            color: #4e73df;
+            font-weight: 600;
+        }
+
+        .pricing-card-footer {
+            text-align: center;
+            padding: 15px;
+            background: #fff; /* Gradasi hijau biru */
+        }
+
+        .pricing-card-footer button {
+            background: linear-gradient(45deg, #4e73df, #1cc88a); /* Gradasi hijau biru */
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            width: 100%;
+            cursor: pointer;
+            transition: all 0.3s ease; /* Efek transisi */
+            margin-top: 20px; /* Memberikan jarak di atas tombol */
+        }
+        
+        .pricing-card2-footer button {
+            background: linear-gradient(45deg, #4e73df, #CC10FF); /* Gradasi hijau biru */
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            width: 100%;
+            cursor: pointer;
+            transition: all 0.3s ease; /* Efek transisi */
+            margin-top: 20px; /* Memberikan jarak di atas tombol */
+        }
+
+        .pricing-card-footer button:hover {
+            background-color: #e04e28; /* Hover effect */
+        }
+
+        .pricing-card-price {
+            font-size: 1.6rem;
+            font-weight: bold;
+            color: #333;
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        /* Responsive Layout */
+        @media (max-width: 768px) {
+            .pricing-card {
+                max-width: 48%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .pricing-card {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>WTS Vps Digital Ocean</h1>
+            <p>Pilih Paket Hosting Terbaik untuk Bisnis Anda dan Nikmati Layanan Tanpa Gangguan.</p>
+        </header>
+
+        <div class="pricing-container">
+            <div class="pricing-card">
+                <div class="pricing-card-header">
+                    <h3>Paket Basic</h3>
+                    <p>Ram 2 Core 1</p>
+                </div>
+                <div class="pricing-card-body">
+                    <div class="feature"><span>Storage</span><span class="value">2 GB vCore 1</span></div>
+                    <div class="feature"><span>Bandwidth</span><span class="value">2 TB</span></div>
+                    <div class="feature"><span>SSD</span><span class="value">50 GB</span></div>
+                    <div class="feature"><span>Support</span><span class="value">Ubuntu 22 Lts</span></div>
+                    <div class="feature"><span>Server</span><span class="value">Mc/Bot Wa</span></div>
+                </div>
+                <div class="pricing-card-price">
+                    Rp 20.000 / bulan
+                </div>
+                <div class="pricing-card-footer">
+                    <button onclick="window.location.href='https://wa.me/phone_number'">Get Now</button>
+                </div>
+            </div>
+
+            <div class="pricing-card">
+                <div class="pricing-card-header">
+                    <h3>Paket Profesional</h3>
+                    <p>Ram 2 Core 2</p>
+                </div>
+                <div class="pricing-card-body">
+                    <div class="feature"><span>Storage</span><span class="value">2 GB vCore 2</span></div>
+                    <div class="feature"><span>Bandwidth</span><span class="value">2 TB</span></div>
+                    <div class="feature"><span>SSD</span><span class="value">50 GB</span></div>
+                    <div class="feature"><span>Support</span><span class="value">Ubuntu 22 Lts</span></div>
+                    <div class="feature"><span>Server</span><span class="value">Mc/Bot Wa</span></div>
+                </div>
+                <div class="pricing-card-price">
+                    Rp 25.000 / bulan
+                </div>
+                <div class="pricing-card-footer">
+                    <button onclick="window.location.href='https://wa.me/phone_number'">Get Now</button>
+                </div>
+            </div>
+
+            <div class="pricing-card">
+                <div class="pricing-card-header">
+                    <h3>Paket Bisnis</h3>
+                    <p>Ram 4 Core 2</p>
+                </div>
+                <div class="pricing-card-body">
+                    <div class="feature"><span>Storage</span><span class="value">4 GB vCore 2</span></div>
+                    <div class="feature"><span>Bandwidth</span><span class="value">4 TB</span></div>
+                    <div class="feature"><span>SSD</span><span class="value">80 GB</span></div>
+                    <div class="feature"><span>Support</span><span class="value">Ubuntu 22 Lts</span></div>
+                    <div class="feature"><span>Server</span><span class="value">Mc/Bot Wa</span></div>
+                </div>
+                <div class="pricing-card-price">
+                    Rp 35.000 / bulan
+                </div>
+                <div class="pricing-card-footer">
+                    <button onclick="window.location.href='https://wa.me/phone_number'">Get Now</button>
+                </div>
+            </div>
+            
+            <div class="pricing-card">
+              <div class="pricing-card-header">
+                <h3>Paket Pro</h3>
+                <p>Ram 8 Core 4</p>
+              </div>
+              <div class="pricing-card-body">
+                <div class="feature"><span>Storage</span><span class="value">8 GB vCore 4</span></div>
+                <div class="feature"><span>Bandwidth</span><span class="value">5 TB</span></div>
+                <div class="feature"><span>SSD</span><span class="value">160 GB</span></div>
+                <div class="feature"><span>Support</span><span class="value">Ubuntu 22 Lts</span></div>
+                <div class="feature"><span>Server</span><span class="value">Mc/Bot Wa</span></div>
+              </div>
+              <div class="pricing-card-price">
+                Rp 50.000 / bulan
+              </div>
+              <div class="pricing-card-footer">
+                <button onclick="window.location.href='https://wa.me/phone_number'">Beli Sekarang</button>
+              </div>
+            </div>
+            
+            <div class="pricing-card">
+              <div class="pricing-card-header">
+                <h3>Paket VIP</h3>
+                <p>Ram 16 Core 4</p>
+              </div>
+              <div class="pricing-card-body">
+                <div class="feature"><span>Storage</span><span class="value">16 GB vCore 4</span></div>
+                <div class="feature"><span>Bandwidth</span><span class="value">6 TB</span></div>
+                <div class="feature"><span>SSD</span><span class="value">320 GB</span></div>
+                <div class="feature"><span>Support</span><span class="value">Ubuntu 22 Lts</span></div>
+                <div class="feature"><span>Server</span><span class="value">Mc/Bot Wa</span></div>
+              </div>
+              <div class="pricing-card-price">
+                Rp 60.000 / bulan
+              </div>
+              <div class="pricing-card-footer">
+                <button onclick="window.location.href='https://wa.me/phone_number'">Beli Sekarang</button>
+              </div>
+            </div>
+            
+        </div>
+    </div>
+
+</body>
+</html>
